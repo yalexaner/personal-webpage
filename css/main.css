@@ -1,0 +1,14 @@
+body {
+    background-image: url(../image/background.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+img {
+    border-radius: 50%;
+    width: 30%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
