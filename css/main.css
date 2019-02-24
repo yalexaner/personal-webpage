@@ -1,26 +1,105 @@
-body {
-    background-image: url(../image/background.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+@font-face {
+    font-family: DIN;
+    src: url(../font/DINBold.ttf);
 }
 
-#icon {
-    border-radius: 50%;
-    max-width: 30%;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+h2 {
+    font-family: DIN, "Open Sans";
+    font-size: 47px;
+    line-height: 49px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    margin-top:35px;
 }
 
-div.icons {
-    padding-left: 15%;
-    padding-right: 15%;
+/* Header */
+section#header {
+    background: #000;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
 }
 
-div.icons img {
-    border-radius: 50%;
-
-    max-width: 150px;
-    max-height: auto;
+section#header p {
+    margin: 0px;
 }
+
+/* Footer */
+section#footer {
+    background: #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Landing page */
+section#content {
+    background: #292728;
+    color: #fff;
+    transition: all 0.15s;
+}
+
+section#content .image {
+    padding-bottom: 35px;
+    transition: all 0.15s;
+}
+
+section#content .image img {
+    margin-top: 35px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    transition: all 0.15s;
+}
+
+section#content .buttons {
+    background: #1a1a1a;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    transition: all 0.15s;
+}
+
+section#content .socials {
+    padding-top: 20px;
+}
+
+section#content .socials a {
+    display: inline-block;
+    padding-right: 3px;
+    margin-bottom: 10px;
+}
+    
+@media(max-width: 767px) {
+    section#content .image img {
+        margin-top: 15px;
+
+        width: auto!important;
+        height: auto!important;
+    }
+
+    section#content .buttons {
+        margin-top: 15px;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media(max-width: 402px) {
+    section#content .socials a {
+        width: 132px;
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+.fa {
+  color: gray;
+}
+
+.fa:hover {
+    color: black;
+}
+
+/*https://jadensmith.com*/
