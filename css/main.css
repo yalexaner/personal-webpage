@@ -3,6 +3,11 @@
     src: url(../font/DINBold.ttf);
 }
 
+body {
+    background-color: #292728;
+    color: #fff;
+}
+
 h2 {
     font-family: DIN, "Open Sans";
     font-size: 47px;
@@ -10,13 +15,12 @@ h2 {
     text-transform: uppercase;
     margin: 0px;
     padding: 0px;
-    margin-top:35px;
+    margin-top: 35px;
 }
 
 /* Header */
 section#header {
     background: #000;
-    color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 20px;
@@ -26,80 +30,111 @@ section#header p {
     margin: 0px;
 }
 
-/* Footer */
-section#footer {
-    background: #000;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
 /* Landing page */
-section#content {
-    background: #292728;
-    color: #fff;
-    transition: all 0.15s;
-}
-
 section#content .image {
     padding-bottom: 35px;
-    transition: all 0.15s;
 }
 
 section#content .image img {
-    margin-top: 35px;
+    margin-top: 15px;
     max-width: 100%;
     height: auto;
     width: auto;
-    transition: all 0.15s;
 }
 
 section#content .buttons {
     background: #1a1a1a;
-    padding-top: 35px;
-    padding-bottom: 25px;
+    border-radius: 100px;
+    padding: 25px;
+    margin-bottom: 35px;
     transition: all 0.15s;
 }
 
-section#content .socials {
-    padding-top: 20px;
+section#content .buttons:hover {
+    box-shadow: 1px 3px 5px black;
 }
 
-section#content .socials a {
-    display: inline-block;
-    padding-right: 3px;
-    margin-bottom: 10px;
+section#content .buttons .socials-xs {
+    display: none;
 }
-    
-@media(max-width: 767px) {
+
+section#content .buttons .socials-sm {
+    display: none;
+}
+
+section#content .buttons .socials-md {
+    display: block;
+}
+
+/*Extra small devices (less than 576px)*/
+@media (max-width: 687.98px) {
+    section#content .buttons {
+        border-radius: 0px;
+        padding: 25px 0px 0px 0px;
+        margin: 0px;
+        align-items: left;
+        transition: all 0.15s;
+    }
+
+    section#content .buttons a {
+        margin: 0px 0px 10px 0px;
+        padding: 0;
+    }
+
+    section#content .buttons span {
+        font-size: 29px;
+    }
+
+    section#content .buttons .socials-xs {
+        display: inline;
+    }
+
+    section#content .buttons .socials-md {
+        display: none;
+    }
+}
+
+/*Small devices (less than 768px)*/
+@media (min-width: 688px) and (max-width: 767.98px) {
     section#content .image img {
         margin-top: 15px;
-
         width: auto!important;
         height: auto!important;
     }
 
     section#content .buttons {
-        margin-top: 15px;
+        border-radius: 0px;
+        padding: 25px 0px 25px 0px;
+        margin: 0px;
+        transition: all 0.15s;
+    }
 
-        padding-top: 15px;
-        padding-bottom: 15px;
+    section#content .buttons a {
+        margin-right: 25px;
+        padding: 0;
+    }
+
+    section#content .buttons span {
+        font-size: 45px;
+    }
+
+    section#content .buttons .socials-sm {
+        display: inline;
+    }
+
+    section#content .buttons .socials-md {
+        display: none;
     }
 }
 
-@media(max-width: 402px) {
-    section#content .socials a {
-        width: 132px;
-        text-align: center;
-        padding: 0px;
-    }
-}
-
-.fa {
+.buttons a {
   color: gray;
 }
 
-.fa:hover {
+.buttons a:hover {
     color: black;
+    text-decoration: none;
+    transition: all 0.25s;
 }
 
 /*https://jadensmith.com*/
